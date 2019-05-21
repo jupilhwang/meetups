@@ -3,7 +3,7 @@
 - Spring Cloud on Kubernetes (2019.05.23)
   - Spring Cloud & Netflix OSS
   - Kubernetes
-  - Dockerize
+  - [Dockerize](spring-cloud-kubernetes-201905/dockerize.md)
   - Spring Cloud Kubernetes
   - Configmaps & Secrets
   - Istio
