@@ -116,12 +116,12 @@ https://buildpacks.io/
 
 
 example of running the Heroku Cloud Native Ruby buildpack against a Rails app:
-![](https://heroku-blog-files.s3.amazonaws.com/posts/1554242856-cnb-beta-3-no-shadow.gif)
+![](img/1554242856-cnb-beta-3-no-shadow.gif)
 
 https://github.com/buildpack/pack/releases/tag/v0.1.0
 
 
-![](https://heroku-blog-files.s3.amazonaws.com/posts/1538419833-Cloud%20Native%20Buildpacks%20Blog%20Image.png)
+![](img/1538419833-Cloud%20Native%20Buildpacks%20Blog%20Image.png)
 
 ##### Installation
 ```bash
