@@ -72,6 +72,7 @@ https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now
 |Archaius 1|Spring Boot external config + Spring Cloud Config|
 
 
-Hystrix and Ribbon --> maintenance mode
+Hystrix and Ribbon --> **maintenance mode**
+
 "Placing a module in maintenance mode means that the Spring Cloud team will no longer be adding new features to the module. We will fix blocker bugs and security issues, and we will also consider and review small pull requests from the community."
 
