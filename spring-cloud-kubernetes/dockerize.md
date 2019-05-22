@@ -10,7 +10,6 @@ git clone https://github.com/callicoder/spring-boot-websocket-chat-demo
 ```
 
 ##### Docker
-
 ```dockerfile
 # Start with a base image containing Java runtime
 FROM openjdk:8-jdk-alpine
@@ -108,20 +107,44 @@ task buildImage(type: DockerBuildImage) {
 ![](https://buildpacks.io/images/buildpacks-logo.svg)
 https://buildpacks.io/
 
+![](img/1538419833-Cloud%20Native%20Buildpacks%20Blog%20Image.png)
+
 - CNCF의 sandbox project로 Salesforce의 Heroku 와 Cloud Foundry
-- Dockerfile 필요없이, OCI-compliant image 를 만듬
+- Dockerfile 필요없이, source code에서 직접 OCI-compliant image 를 만듬
+- Remote image layer insertion and rebasing on Docker registries to:
+  - Take advantage of compatibility gurantees (e.g., ABI compatibility of OS libs)
+  - Minimize build time and data transfer
 - Polyglot Programming Language support : Ruby, Node.js, Java, Python, PHP, or Go
 - **Application developers** to use Cloud Native Buildpacks to convert code into runnable images
 - **Buildpack authors** to develop and package buildpacks for distribution
 
+
+##### Docker Images
+- Node.js App
+ ![](img/dockerimage-nodejs-app.png)
+- ssl cve patch
+ ![](img/dockerimage-migrations.png)
+- Node.js App with buildpack
+![](img/droplet-buildpack.png)
+
+![](img/dockerimage-stack-buildpack-app.png)
+Time to deploy 500 new images, likely minutes
+
+
+##### Optimized Builds - How it works
+- Only re-builds and uploads layers when necessary
+- OCI image specification: content addressable layers
+- Docker Registry v2: cross repository blob mounting
+
+**Result**
+
+**Fast builds, mionimal data transfer, layer "rebasing" directly on the registy!**
 
 example of running the Heroku Cloud Native Ruby buildpack against a Rails app:
 ![](img/1554242856-cnb-beta-3-no-shadow.gif)
 
 https://github.com/buildpack/pack/releases/tag/v0.1.0
 
-
-![](img/1538419833-Cloud%20Native%20Buildpacks%20Blog%20Image.png)
 
 ##### Installation
 ```bash
