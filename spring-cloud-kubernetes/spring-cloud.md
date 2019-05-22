@@ -47,8 +47,10 @@ $ spring cloud eureka configserver h2 zipkin hystrixdashboard
 - Hystrix Dashboard : http://localhost:7979 : Any Spring Cloud app that declares Hystrix circuit breakers publishes metrics on /hystrix.stream. Type that address into the dashboad to visualize all the metrics
 
 #### Writing Simple application 
-```java
-@EnableEurekaClient
+
+app.groovy
+```groovy
+@EnableDiscoveryClient
 @RestController
 class Service {
   @GetMapping('/')
@@ -57,3 +59,19 @@ class Service {
   }
 }
 ```
+
+# BUT
+https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now
+
+|Current|REPLACEMENT|
+|---|---|
+|Hystrix|Resillence4j|
+|Hystrix Dashboard / Turbine|Micrometer + Monitoring System|
+|Riboon|Spring Cloud Loadbalancer|
+|Zuul 1|Spring Cloud Gateway|
+|Archaius 1|Spring Boot external config + Spring Cloud Config|
+
+
+Hystrix and Ribbon --> maintenance mode
+"Placing a module in maintenance mode means that the Spring Cloud team will no longer be adding new features to the module. We will fix blocker bugs and security issues, and we will also consider and review small pull requests from the community."
+
