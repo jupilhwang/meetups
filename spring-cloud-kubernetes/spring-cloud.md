@@ -22,7 +22,6 @@
 ![](https://res.infoq.com/articles/spring-cloud-azure/en/resources/spring-cloud-azure-1541139702005.jpg)
 
 
-
 #### Spring Cloud CLI
 ```bash
 # SDKman use
@@ -76,3 +75,9 @@ Hystrix and Ribbon --> **maintenance mode**
 
 "Placing a module in maintenance mode means that the Spring Cloud team will no longer be adding new features to the module. We will fix blocker bugs and security issues, and we will also consider and review small pull requests from the community."
 
+- Spring Cloud Circuit Breaker 
+  - supprts : Netflix Hystrix, Resilience4j, Sentinel and Spring Retry
+
+#### Netflix OSS and Spring Boot — Coming Full Circle
+![](https://cdn-images-1.medium.com/max/800/1*5OHBUUDITAouvo1tWyxG1g.jpeg)
+source : https://medium.com/netflix-techblog/netflix-oss-and-spring-boot-coming-full-circle-4855947713a0
