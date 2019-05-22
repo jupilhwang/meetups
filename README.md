@@ -8,4 +8,3 @@
   - [Configmaps & Secrets](spring-cloud-kubernetes/configmaps.md)
   - [Istio](spring-cloud-kubernetes/istio.md)
 
-

@@ -2,7 +2,7 @@
 
 #### Using Dockerfile & docker build
 ##### Downloading the application to Dockerize
-참고: callicoder
+참고: 
 https://www.callicoder.com/spring-boot-websocket-chat-example/
 
 ```
