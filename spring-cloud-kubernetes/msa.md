@@ -1,4 +1,14 @@
 
+### 12-factor and beyond 12-factor
+
+  - 설정 자동화를 위한 절차(declarative) 를 체계화 하여 새로운 개발자가 프로젝트에 참여하는데 드는 시간과 비용을 최소화한다.
+  - OS에 따라 달라지는 부분을 명확히하고, 실행 환경 사이의 이식성을 극대화 한다.
+  - 최근 등장한 클라우드 플랫폼 배포에 적합하고, 서버와 시스템의 관리가 필요없게 된다.
+  - 개발 환경과 운영 환경의 차이를 최소화하고 민첩성을 극대화하기 위해 지속적인 배포가 가능하다.
+  - 툴, 아키텍처, 개발 방식을 크게 바꾸지 않고 확장(scale up) 할 수 있다.
+
+출처 : https://12factor.net/ko/
+
 
 #### A comparison of platforms
 | Microservices concern  |Spring Cloud & Netflix OSS|Kubernetes|
@@ -16,4 +26,4 @@
 |Job management: scheduled computations disconnected from any individual user requests |Spring Batch |Kubernetes Jobs and Scheduled Jobs |
 |Singleton application: run specific services as a single instance of it within the entire system |Spring Cloud Cluster |Kubernetes Pods |
 
-source : https://en.wikipedia.org/wiki/Microservices#A_comparison_of_platforms
+출처: https://en.wikipedia.org/wiki/Microservices#A_comparison_of_platforms

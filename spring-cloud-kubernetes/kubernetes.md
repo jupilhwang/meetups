@@ -1,6 +1,6 @@
 ## Kubernetes
 
-"두말하면 잔소리" 사실상 표준
+"두말하면 잔소리" - 플랫폼이라고 부르는 인프라 추상화의 사실상 표준
 
 ### Docker의 등장 (2013) 이후 
 ![](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)
@@ -15,10 +15,12 @@
 
 #### A basic overview of the kubernetes architecture
 ![](img/k8s-basic-arch.jpg)
+
 source: Kubernetes In Action (book)
 
 #### Kubernetes architecture diagram
 ![](https://upload.wikimedia.org/wikipedia/commons/b/be/Kubernetes.png)
+
 source: https://en.wikipedia.org/wiki/Kubernetes
 
 #### Kubernetes Objects
@@ -47,5 +49,6 @@ source: https://en.wikipedia.org/wiki/Kubernetes
 
 #### CNCF landscape - Kubernetes Echosystems
 ![](img/k8s-cncf-landscape.png)
+
 source: https://landscape.cncf.io/images/landscape.png
 
