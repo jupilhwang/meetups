@@ -1,4 +1,4 @@
-## Istio
+## Istio - A service mesh for Microservices
 ![](img/istio-wahtis.png)
 
 Istio 는 Google, IBM, Redhat, Lyft, VMware 와 같은 다수의 업체들이 참여하여 Service Mesh를 쉽게 제공하는 오픈소스이다. 대규모 마이크로서비스 환경에서 서비스를 연결, 보안, 제어 및 관찰 할 수 있는 방안을 쉽게 제공할 수 있도록 지원한다
@@ -53,5 +53,6 @@ Istio Gateway > VirtualService > K8s Service
 ![](https://istio.io/docs/concepts/performance-and-scalability/latency.svg?sanitize=true)
 
 - nomixer-both Same as both-sidecars without Mixer. MixerV2 latency profile will be similar.
-- nomixer-server Same as server-sidecar without Mi
-xer. MixerV2 latency profile will be similar.
+- nomixer-server Same as server-sidecar without Mixer. MixerV2 latency profile will be similar.
+
+

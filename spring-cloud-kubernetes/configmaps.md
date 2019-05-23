@@ -91,3 +91,5 @@ volume을 통해서 ConfigMap을 사용하게 되면, pod이나 container에 대
   - k8s 1.6에서 optional 추가
 
 
+#### 만약 Dynamic reload를 원하면 Api Call로 직접 ConfigMap을 읽어와야 한다.
+ 

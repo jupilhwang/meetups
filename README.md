@@ -5,6 +5,5 @@
   - [Kubernetes](spring-cloud-kubernetes/kubernetes.md)
   - [Dockerize](spring-cloud-kubernetes/dockerize.md)
   - [Spring Cloud Kubernetes](spring-cloud-kubernetes/msa.md)
-  - [Configmaps & Secrets](spring-cloud-kubernetes/configmaps.md)
-  - [Istio](spring-cloud-kubernetes/istio.md)
+  - [PCF](pcf.md)
 
