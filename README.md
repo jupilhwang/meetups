@@ -8,8 +8,5 @@
   - [PCF](pcf.md)
 
 
-  - OOMKilled
-    (Cloud Foundry Buildpack Memory Calculator)
-    https://github.com/cloudfoundry/java-buildpack-memory-calculator
+  - 어떤 JVM을 선택할 것인가?
 
-  
