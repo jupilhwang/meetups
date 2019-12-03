@@ -84,3 +84,4 @@ private DiscoveryClient discoveryClient;
     <artifactId>spring-cloud-starter-kubernetes-ribbon</artifactId>
 </dependency>
 ```
+
