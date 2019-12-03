@@ -1,6 +1,8 @@
 # Choose a JDK
+<!-- 
 https://www.youtube.com/watch?v=YTPUNesUIbI
-어떤 버전의 JDK를 사용하나요?
+-->
+컨테이너에서는 어떤 버전의 JDK를 사용하나요?
 
 ## Container Aware
   - OpenJDK 8u192 or above
@@ -102,4 +104,4 @@ docker run -it --rm -m 1g openjdk:11-jdk-slim java -XX:+PrintFlagsFinal -XX:+Use
   (Cloud Foundry Buildpack Memory Calculator)
   https://github.com/cloudfoundry/java-buildpack-memory-calculator
 
-
+!()[.img/java-buildpack-memory-calculator.png]
