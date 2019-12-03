@@ -2,7 +2,7 @@
 
 
 - Spring Boot for Cloud Native Applications
-  - [Pivotal Bank Demo Apps](pivotal-bank-demo-kr/Readme.md)
+  - [Pivotal Bank Demo Apps](https://github.com/jupilhwang/pivotal-bank-demo-kr/Readme.md)
 
 
 - Spring Cloud on Kubernetes (2019.05.23)
