@@ -20,11 +20,23 @@
   }
   ```
 
+- test
 - Test 
 ```
 http :8080/hello/jhwang\
 ```
 
+## Jib Gradle Plugin
+
+- 일반적인 Docker Image가 만들어지는 과정
+![](img/docker_build_flowrc1o.max.png)
+
+- Jib 가 이미지를 만드는 방식
+![](img/jib_build_flowb135.png)
+
+  Docker Daemon이 없는 환경(특히나 CI/CD Pipeline)에서도 Docker Image Build 가 가능
+
+  * 출처: 
 
   build.gradle.kt
   ```gradle
@@ -53,6 +65,7 @@ http :8080/hello/jhwang\
         "SPRING_CLOUD_BOOTSTRAP_LOCATION" to "/path/to/bootstrap.yml"
       )
       useCurrentTimestamp = true
+      user = "nobody:nogroup"
     }
     setAllowInsecureRegistries(true)
   }
