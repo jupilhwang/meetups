@@ -49,17 +49,37 @@ docker run -it --rm --memory=256m --cpus=1 openjdk:8u141-slim java -XX:+PrintFla
 
 Native Memory
 
-```
+```bash
 docker run -it --rm --memory=256m --cpus=1 openjdk:8u232-slim java -XX:+PrintFlagsFinal | grep MaxHeap
     uintx MaxHeapFreeRatio                          = 70                                  {manageable}
     uintx MaxHeapSize                              := 132120576                           {product}
 ```
 
+### CGroup Memroy Limit for JVM Heap
 
-## JMV Options 
+```bash
+docker run -it --rm -m 1g openjdk:8u232-slim java -XX:+PrintFlagsFinal -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap | grep -i maxheap
+
+    uintx MaxHeapFreeRatio                          = 70                                  {manageable}
+    uintx MaxHeapSize                              := 268435456                           {product}
+```
+
+- Use all of the RAM for heap  --> 조심조심
+```
+docker run -it --rm -m 1g openjdk:8u232-slim java -XX:+PrintFlagsFinal -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:MaxRAMFraction=1 | grep -i maxheap
+```
+
+### JDK 10+ 에서는
+-XX:+UseCGroupMemroyLimitFroHeap
+-XX:+UseContainerSupport                (default)
+-XX:MaxRAMPercentage
+
+
+
+
 
 ### Natvie Memory Tracking
-  - -XX:NativeMemoryTracking=summary --XX:+PrintNMTStatics
+  - -XX:NativeMemoryTracking=summary -XX:+PrintNMTStatistics -XX:+UnlockDiagnosticVMOptions
 
 
   
