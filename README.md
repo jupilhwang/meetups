@@ -7,3 +7,9 @@
   - [Spring Cloud Kubernetes](spring-cloud-kubernetes/msa.md)
   - [PCF](pcf.md)
 
+
+  - OOMKilled
+    (Cloud Foundry Buildpack Memory Calculator)
+    https://github.com/cloudfoudy/java-buildpack-memory-calculator
+
+  
