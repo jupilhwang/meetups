@@ -104,9 +104,13 @@ docker run -it --rm -m 1g openjdk:11-jdk-slim java -XX:+PrintFlagsFinal -XX:+Use
   (Cloud Foundry Buildpack Memory Calculator)
   https://github.com/cloudfoundry/java-buildpack-memory-calculator
 
-![](.img/java-buildpack-memory-calculator.png)
+![](img/java-buildpack-memory-calculator.png)
 
     - thread-count
     - total-memory 
 
-
+```bash
+java-buildpack-memory-calculator --loaded-class-count=1000 --thread-count=100 --total-memory=512M --jvm-options "-Xss512k"
+-XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=19335K -XX:ReservedCodeCacheSize=240M -Xmx197752K
+```
+- JAVA_OPTIONS 에 적용
