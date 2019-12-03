@@ -79,3 +79,24 @@ Flags:
 Use "pack [command] --help" for more information about a command.
 ```
 
+## Select a builder
+```bash
+pack suggest-builders
+Suggested builders:
+	Cloud Foundry:     cloudfoundry/cnb:bionic         Ubuntu bionic base image with buildpacks for Java, NodeJS and Golang
+	Cloud Foundry:     cloudfoundry/cnb:cflinuxfs3     cflinuxfs3 base image with buildpacks for Java, .NET, NodeJS, Python, Golang, PHP, HTTPD and NGINX
+	Heroku:            heroku/buildpacks:18            heroku-18 base image with buildpacks for Ruby, Java, Node.js, Python, Golang, & PHP
+
+Tip: Learn more about a specific builder with:
+	pack inspect-builder [builder image]
+```
+
+```
+pack set-default-builder cloudfoundry/cnb:bionic
+Builder cloudfoundry/cnb:bionic is now the default builder
+```
+
+## Build app
+```
+pack build sample-app .
+```

@@ -20,7 +20,6 @@
   }
   ```
 
-- test
 - Test 
 ```
 http :8080/hello/jhwang\
