@@ -4,8 +4,10 @@ https://www.youtube.com/watch?v=YTPUNesUIbI
 
 ## Container Aware
   - OpenJDK 8u192 or above
-  - 
+  - JDK 11 lts 
 
+
+### HeapMemory
 
 ```bash
 docker run -it --rm --memory=256m --cpus=1 openjdk:8u141-slim java -XX:+PrintFlagsFinal | grep MaxHeap
@@ -47,8 +49,7 @@ docker run -it --rm --memory=256m --cpus=1 openjdk:8u141-slim java -XX:+PrintFla
 ...
 ```
 
-Native Memory
-
+Native Memory on 8u232
 ```bash
 docker run -it --rm --memory=256m --cpus=1 openjdk:8u232-slim java -XX:+PrintFlagsFinal | grep MaxHeap
     uintx MaxHeapFreeRatio                          = 70                                  {manageable}
