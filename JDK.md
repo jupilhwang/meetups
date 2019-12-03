@@ -68,12 +68,24 @@ docker run -it --rm -m 1g openjdk:8u232-slim java -XX:+PrintFlagsFinal -XX:+Unlo
 ```
 docker run -it --rm -m 1g openjdk:8u232-slim java -XX:+PrintFlagsFinal -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:MaxRAMFraction=1 | grep -i maxheap
 ```
+- -XX:MaxRAM 설정 이나 -XX:MaxRAMFraction 은 권고하는 방법은 아니다
 
 ### JDK 10+ 에서는
--XX:+UseCGroupMemroyLimitFroHeap
--XX:+UseContainerSupport                (default)
--XX:MaxRAMPercentage
+- -XX:+UseCGroupMemroyLimitFroHeap        (**deprecated**)
+- -XX:+UseContainerSupport                (**default**)
+- -XX:MaxRAMPercentage
 
+```bash
+docker run -it --rm -m 1g openjdk:11-jdk-slim java -XX:+PrintFlagsFinal -XX:+UseContainerSupprt | grep -i maxheap
+    uintx MaxHeapFreeRatio                         = 70                                     {manageable} {default}
+   size_t MaxHeapSize                              = 268435456                                 {product} {ergonomic}
+
+
+docker run -it --rm -m 1g openjdk:11-jdk-slim java -XX:+PrintFlagsFinal -XX:+UseContainerSupport -XX:MaxRAMPercentage=50 | grep -i maxheap
+    uintx MaxHeapFreeRatio                         = 70                                     {manageable} {default}
+   size_t MaxHeapSize                              = 536870912                                 {product} {ergonomic}
+```
+- -XX:MAXRAMPercentage 를 통해서 컨테이너 메모리의 몇퍼센티지를 Heap으로 할당할 지 정한다.
 
 
 
