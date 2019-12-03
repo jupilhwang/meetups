@@ -3,6 +3,8 @@
 ## Simple Helloworld Spring Boot Apps
 
   - starter.spring.io
+    - gradle
+    - kotlin
     - Spring Reactive Web
     - Spring Actuator
     - Lombok
@@ -16,8 +18,13 @@
       return "Hello World !!! ${name}".toMono()
     }
   }
-
   ```
+
+- Test 
+```
+http :8080/hello/jhwang\
+```
+
 
   build.gradle.kt
   ```gradle
