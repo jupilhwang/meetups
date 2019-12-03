@@ -10,6 +10,6 @@
 
   - OOMKilled
     (Cloud Foundry Buildpack Memory Calculator)
-    https://github.com/cloudfoundy/java-buildpack-memory-calculator
+    https://github.com/cloudfoundry/java-buildpack-memory-calculator
 
   
