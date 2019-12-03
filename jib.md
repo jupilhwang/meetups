@@ -29,6 +29,9 @@
   }
 
   jib {
+    from {
+      image="openjdk:8-jdk-alpine"
+    }
     to {
       image="namoo4u/jib-demo"
       auth {
@@ -51,5 +54,8 @@
 
   - Docker Container Image 만들기
   ```bash
+  $ gradle jib
 
+  $ docker run -it --rm -p 8080:8080 namoo4u/jib-demo
   ```
+
