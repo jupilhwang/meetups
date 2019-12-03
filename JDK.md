@@ -97,6 +97,57 @@ docker run -it --rm -m 1g openjdk:11-jdk-slim java -XX:+PrintFlagsFinal -XX:+Use
   - -XX:NativeMemoryTracking=summary -XX:+PrintNMTStatistics -XX:+UnlockDiagnosticVMOptions
 
 
+
+```bash
+docker run -it --rm -m 256m -c 2 openjdk:8u232-slim java -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -XX:+PrintActiveCpus -XX:+UseParallelGC -XX:NativeMemoryTracking=summary -XX:+PrintNMTStatistics
+
+Native Memory Tracking:
+
+Total: reserved=1459239KB, committed=38667KB
+-                 Java Heap (reserved=129024KB, committed=8192KB)
+                            (mmap: reserved=129024KB, committed=8192KB)
+
+-                     Class (reserved=1058924KB, committed=6636KB)
+                            (classes #451)
+                            (malloc=2156KB #129)
+                            (mmap: reserved=1056768KB, committed=4480KB)
+
+-                    Thread (reserved=10300KB, committed=10300KB)
+                            (thread #10)
+                            (stack: reserved=10256KB, committed=10256KB)
+                            (malloc=32KB #53)
+                            (arena=12KB #18)
+
+-                      Code (reserved=249640KB, committed=2576KB)
+                            (malloc=40KB #327)
+                            (mmap: reserved=249600KB, committed=2536KB)
+
+-                        GC (reserved=7032KB, committed=6644KB)
+                            (malloc=2312KB #108)
+                            (mmap: reserved=4720KB, committed=4332KB)
+
+-                  Compiler (reserved=132KB, committed=132KB)
+                            (malloc=1KB #24)
+                            (arena=131KB #5)
+
+-                  Internal (reserved=2259KB, committed=2259KB)
+                            (malloc=2227KB #1323)
+                            (mmap: reserved=32KB, committed=32KB)
+
+-                    Symbol (reserved=1462KB, committed=1462KB)
+                            (malloc=942KB #90)
+                            (arena=520KB #1)
+
+-    Native Memory Tracking (reserved=36KB, committed=36KB)
+                            (malloc=3KB #35)
+                            (tracking overhead=33KB)
+
+-               Arena Chunk (reserved=431KB, committed=431KB)
+                            (malloc=431KB)
+
+```
+
+
   
 
 
