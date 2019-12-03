@@ -105,3 +105,8 @@ docker run -it --rm -m 1g openjdk:11-jdk-slim java -XX:+PrintFlagsFinal -XX:+Use
   https://github.com/cloudfoundry/java-buildpack-memory-calculator
 
 ![](.img/java-buildpack-memory-calculator.png)
+
+    - thread-count
+    - total-memory 
+
+
