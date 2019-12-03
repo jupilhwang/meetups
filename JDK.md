@@ -1,20 +1,21 @@
 # Choose a JDK
 https://www.youtube.com/watch?v=YTPUNesUIbI
+어떤 버전의 JDK를 사용하나요?
 
 ## Container Aware
   - OpenJDK 8u192 or above
-
-
-## OOMKilled
-  (Cloud Foundry Buildpack Memory Calculator)
-  https://github.com/cloudfoundry/java-buildpack-memory-calculator
+  - 
 
 
 ```bash
 docker run -it --rm --memory=256m --cpus=1 openjdk:8u141-slim java -XX:+PrintFlagsFinal | grep MaxHeap
     uintx MaxHeapFreeRatio                          = 100                                 {manageable}
     uintx MaxHeapSize                              := 1035993088                          {product}
+```
+- cgroup으로 256m를 지정하였으나, 실제로는 1GB를 사용
 
+### thread
+```
 docker run -it --rm --memory=256m --cpus=1 openjdk:8u141-slim java -XX:+PrintFlagsFinal | grep Thread
      bool BindGCTaskThreadsToCPUs                   = false                               {product}
      bool CompilerThreadHintNoPreempt               = true                                {product}
@@ -39,9 +40,20 @@ docker run -it --rm --memory=256m --cpus=1 openjdk:8u141-slim java -XX:+PrintFla
      bool VMThreadHintNoPreempt                     = false                               {product}
      intx VMThreadPriority                          = -1                                  {product}
      intx VMThreadStackSize                         = 1024                                {pd product}
-     
+```
+```java
+...
+  Runtime.getAvailableProcessor()
+...
 ```
 
+Native Memory
+
+```
+docker run -it --rm --memory=256m --cpus=1 openjdk:8u232-slim java -XX:+PrintFlagsFinal | grep MaxHeap
+    uintx MaxHeapFreeRatio                          = 70                                  {manageable}
+    uintx MaxHeapSize                              := 132120576                           {product}
+```
 
 
 ## JMV Options 
@@ -51,3 +63,10 @@ docker run -it --rm --memory=256m --cpus=1 openjdk:8u141-slim java -XX:+PrintFla
 
 
   
+
+
+## OOMKilled
+  (Cloud Foundry Buildpack Memory Calculator)
+  https://github.com/cloudfoundry/java-buildpack-memory-calculator
+
+
