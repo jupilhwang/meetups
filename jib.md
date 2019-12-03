@@ -20,7 +20,7 @@
   ```
 
   build.gradle.kt
-  ```kotlin
+  ```gradle
   ...
   plugins {
     ...
@@ -57,5 +57,13 @@
   $ gradle jib
 
   $ docker run -it --rm -p 8080:8080 namoo4u/jib-demo
+
+  $ http :8080/hello/jhwang
+  HTTP/1.1 200 OK
+  Content-Length: 14
+  Content-Type: text/plain;charset=UTF-8
+
+  Hello World jp
+
   ```
 
