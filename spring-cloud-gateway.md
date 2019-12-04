@@ -42,3 +42,15 @@ spring:
             fallbackUri: forward:/myfallback          
 
 ```
+
+
+
+## Testing 
+
+```bash
+http friendly-oryx.cfapps.io/v1/quotes\?q=PVTL
+```
+
+```bash
+http friendly-oryx.cfapps.io/v1/company/PVTL
+```

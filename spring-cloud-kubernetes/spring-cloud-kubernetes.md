@@ -1,14 +1,17 @@
 # Spring Cloud Kubernetes
 
-![](spring-cloud-kubernetes/img/spring-cloud-k8s.png)
+![](img/spring-cloud-k8s.png)
 
+<!--
 ### ConfigMaps
 - [ConfigMap/Secret](configmaps.md)
 
 ### Istio
 - [Istio](istio.md)
 
-### Spring Cloud Kubernetes
+-->
+
+## Spring Cloud Kubernetes
 
 https://github.com/spring-cloud/spring-cloud-kubernetes
 
@@ -25,7 +28,7 @@ https://github.com/spring-cloud/spring-cloud-kubernetes
 - Zipkin Service Discovery
   - Using Zipkin with Kubernetes for distributed tracing
 
-#### Samples
+## Samples
 - DiscoveryClient for Kubernetes
 ```xml
 <dependency>
@@ -56,4 +59,32 @@ private DiscoveryClient discoveryClient;
     <artifactId>spring-cloud-starter-kubernetes-ribbon</artifactId>
 </dependency>
 ```
+
+## 주의 사항
+- Role, RoleBinding, ServiceAccount
+
+```log
+io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/api/v1/namespaces/apps/services. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. services is forbidden: User "system:serviceaccount:apps:default" cannot list services in the namespace "apps".
+```
+
+spring-cloud-kubernetes-clusterrole.yml
+```yaml
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: service-discovery-client
+rules:
+- apiGroups: [""] # "" indicates the core API group
+  resources: ["services", "pods", "configmaps", "endpoints", "secrets"]
+  verbs: ["get", "watch", "list"]
+```
+
+```bash
+# cluster-role 적용
+kubectl apply -f spring-cloud-kubernetes-clusterrole.yml
+
+# service accoiunt 에 role 바인딩
+kubectl create rolebinding default:service-discovery-client --clusterrole service-discovery-client --serviceaccount <namespace>:<service account name>
+```
+
 
