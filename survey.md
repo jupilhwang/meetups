@@ -3,6 +3,6 @@
 
 <img src=img/survey-qr.png width=200%>
 
-or link : https://ko.surveymonkey.com/r/27HPZFS
+or link : http://bit.ly/2RkLyVM
 
 

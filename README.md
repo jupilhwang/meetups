@@ -1,7 +1,7 @@
 # Meetups for Pivotal user group
 
 - Who am I?
-```json
+```
 {[
   {"name":"황주필, Jupil Hwang"},
   {"email":"jhwang@pivotal.io"},
