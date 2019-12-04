@@ -71,7 +71,37 @@ class Service {
   ![](https://raw.githubusercontent.com/jupilhwang/pivotal-bank-demo-kr/master/docs/base-architecture-diagram.png)
 
 
+1. Setting up the environment
+![](img/pivotal-bank-demo-01-setup.png)
+    - circuit-breaker-dashboard
+    - config-server
+    - discovery-service
+    - traderdb                    (MySql)
 
+2. Build the apps
+    - web 
+    - user
+    - accounts
+    - portpolio
+    - quotes
+
+3. Deploy the apps
+![](img/pivotal-bank-demo-02-deploy.png)
+...
+
+![](img/pivotal-bank-demo-02-deploy-end.png)
+
+    - endpoints
+      - web-ui : web-kind-nyala.cfapps.io
+      - user : user-balanced-grysbok.cfapps.io
+      - accounts : accounts-grateful-emu.cfapps.io
+      - quotes : quotes-happy-impala.cfapps.io
+      - portpolio : portfolio-zany-ostrich.cfapps.io
+
+4. Testing
+```bash
+curl https://quotes-happy-impala.cfapps.io/v1/quotes?q=PVTL
+```
 
 # BUT
 https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now
