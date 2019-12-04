@@ -13,9 +13,11 @@
   - Spring Cloud Gateway 
     - [Spring Cloud Gateway Overview](https://cloud.spring.io/spring-cloud-gateway/reference/html/)
     - [Spring Cloud Gateway](https://github.com/jupilhwang/pivotal-bank-demo-kr/blob/master/docs/lab_spring_cloud_gateway.md)
+      
+        - [gateway-service](spring-cloud-gateway.md)
 
 
-- Spring Cloud on Kubernetes (2019.05.23)
+- Spring Cloud Kubernetes
   - [Kubernetes](spring-cloud-kubernetes/kubernetes.md)
   - [Dockerize](spring-cloud-kubernetes/dockerize.md)
   - [Spring Cloud Kubernetes](spring-cloud-kubernetes/spring-cloud-kubernetes.md)

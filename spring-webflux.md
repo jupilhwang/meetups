@@ -25,14 +25,29 @@ dependencies {
 //    testCompile "org.springframework.boot:spring-boot-starter-test"
 //    testCompile "junit:junit"
     testCompile "io.projectreactor:reactor-test"
+
+    compile "org.springframework.cloud:spring-cloud-starter-security"
+
 }
 ```
 
+% 주의 : Pivotal Web Service 에서 Spring Cloud Service를 사용하는 경우 무조건 WebFluxSecurity 를 추가해줘야 한다.
 
-### Repository
-  - CrudRepository --> ReactiveCrudRepository
+```java
+@EnableWebFluxSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-### Service
-  - User --> Mono<User>
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable().authorizeRequests().anyRequest().permitAll();
+        return http.build();
+    }
+```
 
-###
+## RestController
+<!--
+	return Mono.just(ResponseEntity.status(HttpStatus.OK).body(userResponse));
+-->
+```java
+  return ResponseEntity.status(HttpStatus.OK).body(Mono.just(userResponse)); 
+```
