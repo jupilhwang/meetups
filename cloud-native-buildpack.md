@@ -81,7 +81,7 @@ Use "pack [command] --help" for more information about a command.
 
 ## Select a builder
 ```bash
-pack suggest-builders
+$ pack suggest-builders
 Suggested builders:
 	Cloud Foundry:     cloudfoundry/cnb:bionic         Ubuntu bionic base image with buildpacks for Java, NodeJS and Golang
 	Cloud Foundry:     cloudfoundry/cnb:cflinuxfs3     cflinuxfs3 base image with buildpacks for Java, .NET, NodeJS, Python, Golang, PHP, HTTPD and NGINX
@@ -92,7 +92,7 @@ Tip: Learn more about a specific builder with:
 ```
 
 ```
-pack set-default-builder cloudfoundry/cnb:bionic
+$ pack set-default-builder cloudfoundry/cnb:bionic
 Builder cloudfoundry/cnb:bionic is now the default builder
 ```
 
@@ -100,3 +100,10 @@ Builder cloudfoundry/cnb:bionic is now the default builder
 ```
 pack build sample-app .
 ```
+
+docker image 확인
+```
+docker image ls 
+```
+
+
