@@ -102,6 +102,10 @@ class Service {
 ```bash
 curl https://quotes-happy-impala.cfapps.io/v1/quotes?q=PVTL
 ```
+![](img/pivotal-bank-demo-04-test.png)
+
+browse the web-ui https://web-kind-nyala.cfapps.io
+![](img/pivotal-bank-demo-05-web-ui.png)
 
 # BUT
 https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now

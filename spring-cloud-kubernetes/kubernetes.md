@@ -56,8 +56,13 @@ source: https://en.wikipedia.org/wiki/Kubernetes
   - CSI (Container Storage Interface)
 
 #### Kubernetes Services
+- Service
+![](../img/k8s-routing_service.png)
 
-![](https://techblog.rakuten.co.jp/images/k8s-routing/k8s-routing_ingress.png)
+- PortProxy
+![](../img/k8s-routing_ingress.png)
+
+- Ingress
+![](../img/k8s-routing_ingress.png)
 
 출처: [Kubernetes Traffic Routing](https://techblog.rakuten.co.jp/2017/09/28/k8s-routing2/)
-
