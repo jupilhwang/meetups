@@ -1,6 +1,6 @@
 # Meetups for Pivotal user group
-
-- Who am I?
+---
+### Who am I?
 ```
 {[
   {"name":"황주필, Jupil Hwang"},
@@ -10,12 +10,15 @@
   {"github-account":"jupilhwang"}
 ]}
 ```
-
+---
+### Spring Boot and Spring Cloud
 - Spring Boot for Cloud Native Application
   - [Microservice / Cloud Native Application](msa.md)
   - [Pivotal Bank Demo Apps](https://github.com/jupilhwang/pivotal-bank-demo-kr)
   - [Traditional Spring Cloud](spring-cloud.md)
 
+---
+### Reactive
 - [Reactive](Reactive/Reactive.md)
   - [Spring WebFlux](spring-webflux.md)
   - RSocket

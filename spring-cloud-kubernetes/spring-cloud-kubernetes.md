@@ -31,8 +31,10 @@
 
 ## Spring Cloud Kubernetes
 
+### Reference Sites
 https://github.com/spring-cloud/spring-cloud-kubernetes
 
+#### Overview
 - Service Discovery
   - Spring Discovery Client using Kubernetes Service Discovery
 
@@ -46,7 +48,6 @@ https://github.com/spring-cloud/spring-cloud-kubernetes
 - Zipkin Service Discovery
   - Using Zipkin with Kubernetes for distributed tracing
 
-## Samples
 - DiscoveryClient for Kubernetes
 ```xml
 <dependency>

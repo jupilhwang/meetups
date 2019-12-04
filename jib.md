@@ -22,7 +22,7 @@
 
 - Test 
 ```
-http :8080/hello/jhwang\
+http :8080/hello/jhwang
 ```
 
 ## Jib Gradle Plugin
