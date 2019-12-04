@@ -74,10 +74,13 @@ apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: service-discovery-client
 rules:
-- apiGroups: [""] # "" indicates the core API group
+- apiGroups: ["", "extensions", "apps"] # "" indicates the core API group
   resources: ["services", "pods", "configmaps", "endpoints", "secrets"]
   verbs: ["get", "watch", "list"]
 ```
+
+또는 Role 을 생성하고 namespace를 지정할 수 있다.
+
 
 ```bash
 # cluster-role 적용
@@ -87,4 +90,6 @@ kubectl apply -f spring-cloud-kubernetes-clusterrole.yml
 kubectl create rolebinding default:service-discovery-client --clusterrole service-discovery-client --serviceaccount <namespace>:<service account name>
 ```
 
+
+** 참고 URL : https://github.com/spring-cloud/spring-cloud-kubernetes/blob/master/docs/src/main/asciidoc/security-service-accounts.adoc
 
