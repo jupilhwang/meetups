@@ -1,9 +1,9 @@
 
 ## Spring Cloud
-### Spring by Pivotal : The Standard for Cloud Native Java
+### The Standard for Cloud Native Java
 - Spring Boot
 - Spring Cloud
-- Spring Cloud Data Flow
+- Spring Data
 
 <!-- ### Spring Cloud Service
 - Config Server for PCF
@@ -22,23 +22,25 @@
 ![](https://res.infoq.com/articles/spring-cloud-azure/en/resources/spring-cloud-azure-1541139702005.jpg)
 
 
+<!--
+
 #### Spring Cloud CLI
 ```bash
 # SDKman use
 # sdk install springboot 2.1.4.RELEASE
 
 $ spring version
-Spring CLI v2.1.4.RELEASE
+Spring CLI v2.2.1.RELEASE
 
 # Install the Spring Cloud plugin:
-$ spring install org.springframework.cloud:spring-cloud-cli:2.1.0.BUILD-SNAPSHOT
-Installing into: /Users/jhwang/.sdkman/candidates/springboot/2.1.4.RELEASE/lib/ext
+$ spring install org.springframework.cloud:spring-cloud-cli:2.2.0.BUILD-SNAPSHOT
+Installing into: /Users/jhwang/.sdkman/candidates/springboot/2.2.1.RELEASE/lib/ext
 
 # spring cloud -list to list available services
 
 # launch default set of services
-$ spring cloud eureka configserver h2 zipkin hystrixdashboard
-```
+$ spring cloud eureka configserver h2 kafka zipkin 
+``
 
 - Eureka Server : http://localhost:8761 : for service registration and discovery. All the other service show up in it catalog by default
 - Config server : [http://localhost:8888](http://localhost:8888/actuator/info) : running in the native profile and serving configuration from the local diretory ./launcher
@@ -58,6 +60,18 @@ class Service {
   }
 }
 ```
+
+-->
+
+
+## Pivotal Bank Demo 
+- PWS
+  https://github.com/jupilhwang/pivotal-bank-demo-kr
+
+  ![](https://raw.githubusercontent.com/jupilhwang/pivotal-bank-demo-kr/master/docs/base-architecture-diagram.png)
+
+
+
 
 # BUT
 https://spring.io/blog/2018/12/12/spring-cloud-greenwich-rc1-available-now

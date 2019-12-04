@@ -3,8 +3,9 @@
 
 - Spring Boot for Cloud Native Applications
   - [Pivotal Bank Demo Apps](https://github.com/jupilhwang/pivotal-bank-demo-kr)
+  - [Traditional Spring Cloud](spring-cloud.md)
 
-- [Reactive](Reactive.md)
+- [Reactive](Reactive/Reactive.md)
 
 - Spring Cloud on Kubernetes (2019.05.23)
   - [Kubernetes](spring-cloud-kubernetes/kubernetes.md)

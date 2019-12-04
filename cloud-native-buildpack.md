@@ -38,7 +38,7 @@ Time to deploy 500 new images, likely minutes
 example of running the Heroku Cloud Native Ruby buildpack against a Rails app:
 ![](img/1554242856-cnb-beta-3-no-shadow.gif)
 
-https://github.com/buildpack/pack/releases/tag/v0.1.0
+https://github.com/buildpack/pack/releases   (pack v0.5.0 - 2019.12.05)
 
 
 ## Installation
