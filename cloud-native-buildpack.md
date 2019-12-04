@@ -107,3 +107,8 @@ docker image ls
 ```
 
 
+## 참고 자료
+- [How Pivotal Cloud Foundry Buildpacks Work](https://www.youtube.com/watch?v=1JKLiPBmlIc)
+- [Buildpacks Can Be Better](https://www.youtube.com/watch?v=J6zn3WRqJko)
+- [Intro To Cloud Native Buildpacks](https://www.youtube.com/watch?v=t3C2nW0WTRo&feature=youtu.be)
+- [The Future of Opinionated Buildpacks](https://www.youtube.com/watch?v=spW9ZlJpobM)
