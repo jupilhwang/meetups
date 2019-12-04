@@ -28,7 +28,8 @@
     - [Spring Cloud Gateway](https://github.com/jupilhwang/pivotal-bank-demo-kr/blob/master/docs/lab_spring_cloud_gateway.md)
         - [gateway-service](spring-cloud-gateway.md)
 
-
+---
+### Spring Cloud Kubernetes
 - Spring Cloud Kubernetes
   - [Kubernetes](spring-cloud-kubernetes/kubernetes.md)
   - [어떤 JVM을 선택할 것인가?](JDK.md)
@@ -40,7 +41,10 @@
   - [애플리케이션 배포](spring-cloud-kubernetes/deployment.md)
     - [kpack](spring-cloud-kubernetes/kpack.md)
   - [Spring Cloud Kubernetes](spring-cloud-kubernetes/spring-cloud-kubernetes.md)
-
+---
+### Pivotal Platform
 - [PCF](pcf.md)
 
+---
+### Survey
 - [survey](survey.md)
