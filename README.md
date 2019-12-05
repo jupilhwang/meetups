@@ -56,8 +56,9 @@ marp: true
 ---
 # [We Are Hiring Now !!!](https://pivotal.io/careers/openings/seoul)
 
+승리는 도전하는자의 것이다.
 
-연락은 홈페이지에서 하시거나 아는 피봇에게...
+도~~ 전~~
 
 ---
 ### Survey
