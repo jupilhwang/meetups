@@ -54,8 +54,7 @@ marp: true
   - [Spring Cloud Kubernetes](spring-cloud-kubernetes/spring-cloud-kubernetes.md)
 
 ---
-We Are Hiring Now !!!
-![](https://pivotal.io/careers/openings/seoul)
+[We Are Hiring Now !!!](https://pivotal.io/careers/openings/seoul)
 
 ---
 - [Survey](survey.md)
