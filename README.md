@@ -15,15 +15,21 @@ marp: true
   Contents : http://bit.ly/2OO3AOq
 
 ---
+Thanks to Hyper Connect
+
+---
 - Who am I?
 ```
-{[
-  {"name":"황주필, Jupil Hwang"},
-  {"email":"jhwang@pivotal.io"},
-  {"title":"Senior Platform Architect"},
-  {"twitter-account":"@jupilhwang"},
-  {"github-account":"jupilhwang"}
-]}
+{
+  "name":"황주필, Jupil Hwang",
+  "email":"jhwang@pivotal.io",
+  "company": {
+    "name": "Pivotal Software",
+    "title": "Senior Platform Architect"
+  },
+  "twitter-account":"@jupilhwang",
+  "github-account":"jupilhwang"
+}
 ```
 ---
 - Spring Boot for Cloud Native Application
