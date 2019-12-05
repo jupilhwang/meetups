@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Spring Cloud Kubernetes
 
 ![](img/spring-cloud-k8s.png)
@@ -10,7 +14,7 @@
 - [Istio](istio.md)
 
 -->
-
+---
 ## A comparison of platforms
 | Microservices concern  |Spring Cloud & Netflix OSS|Kubernetes|
 |---|---|---|
@@ -29,10 +33,14 @@
 
 출처: https://en.wikipedia.org/wiki/Microservices#A_comparison_of_platforms
 
+---
+
 ## Spring Cloud Kubernetes
 
 ### Reference Sites
 https://github.com/spring-cloud/spring-cloud-kubernetes
+
+---
 
 #### Overview
 - Service Discovery
@@ -47,7 +55,7 @@ https://github.com/spring-cloud/spring-cloud-kubernetes
 
 - Zipkin Service Discovery
   - Using Zipkin with Kubernetes for distributed tracing
-
+---
 - DiscoveryClient for Kubernetes
 ```xml
 <dependency>
@@ -55,6 +63,9 @@ https://github.com/spring-cloud/spring-cloud-kubernetes
     <artifactId>spring-cloud-starter-kubernetes</artifactId>
 </dependency>
 ```
+
+---
+
 DiscoveryClient를 사용하기위해 @EnableDiscoveryClient를 추가
 ```java
 @SpringBootApplication
@@ -71,6 +82,8 @@ inject the client in a code
 private DiscoveryClient discoveryClient;
 ```
 
+---
+
 - Ribbon Discovery for Kubernetes
 ```xml
 <dependency>
@@ -86,6 +99,8 @@ private DiscoveryClient discoveryClient;
 </dependency>
 ```
 
+---
+
 - ALL features
 ```xml
 <dependency>
@@ -94,12 +109,15 @@ private DiscoveryClient discoveryClient;
 </dependency>
 ```
 
+---
+
 ## 주의 사항
 - Role, RoleBinding, ServiceAccount
 
-```log
-io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/api/v1/namespaces/apps/services. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. services is forbidden: User "system:serviceaccount:apps:default" cannot list services in the namespace "apps".
-```
+>io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://>kubernetes.default.svc/api/v1/namespaces/apps/services. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. services is forbidden: User "system:serviceaccount:apps:default" cannot list services in the namespace "apps".
+>
+>
+---
 
 spring-cloud-kubernetes-clusterrole.yml
 ```yaml

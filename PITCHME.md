@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Meetups for Pivotal user group
 ---
 ### Who am I?
@@ -46,5 +50,5 @@
 - [PCF](pcf.md)
 
 ---
-### Survey
+### Survey 
 - [survey](survey.md)

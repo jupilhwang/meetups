@@ -62,19 +62,23 @@ kind: Config
 build:
   artifacts:
     - image: namoo4u/jib-demo
-      jib:
+      jib: {}
         args: ['-x test']
+        type: gradle
 deploy:
   kubectl:
     manifests:
       - k8s/*.yaml
 ```
+
 - run skaffold dev
 ```bash
 skaffold dev
 ```
 
-또는
+  - Reference Links: https://skaffold.dev/docs/references/yaml/
 
-## YAML 파일을 일일이 만들어야 하나?
-- 
+
+## Cloud Code
+- 만약 IntelliJ IDEA 를 사용하면 "Cloud Code" Plugin 을 사용해 보자
+
