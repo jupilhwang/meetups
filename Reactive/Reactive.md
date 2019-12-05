@@ -18,9 +18,6 @@ Facebook ...
 ![](../img/rsocket.svg)
 
 
-
-
-
 ## R2DBC 1.0 RC1 GA (https://r2dbc.io/)
 
 - ConnectionFactory

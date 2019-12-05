@@ -17,7 +17,6 @@
 ### Spring Cloud & Netflix OSS
 ![](https://cdn-images-1.medium.com/max/800/0*xqgKATYfpKsSnNJR.)
 
-
 ### Reference Architecture for Spring Cloud 
 ![](https://res.infoq.com/articles/spring-cloud-azure/en/resources/spring-cloud-azure-1541139702005.jpg)
 
@@ -62,7 +61,6 @@ class Service {
 ```
 
 -->
-
 
 ## Pivotal Bank Demo 
 - PWS

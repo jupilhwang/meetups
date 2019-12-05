@@ -1,5 +1,7 @@
 # Spring WebFlux
 
+![](https://spring.io/img/homepage/diagram-boot-reactor.svg)
+
 ## 기존 user-service 를 webflux 로 변경하기
 
 - build.gradle
@@ -31,8 +33,9 @@ dependencies {
 }
 ```
 
-% 주의 : Pivotal Web Service 에서 Spring Cloud Service를 사용하는 경우 무조건 WebFluxSecurity 를 추가해줘야 한다.
+% 주의 : Pivotal Web Service 에서 Spring Cloud Service를 사용하는 경우 무조건 Security(or WebFluxSecurity) 를 추가해줘야 한다.
 
+- permitAll
 ```java
 @EnableWebFluxSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
