@@ -4,7 +4,7 @@ marp: true
 
 # Spring Cloud Kubernetes
 
-![](img/spring-cloud-k8s.png)
+![](../img/spring-cloud-k8s.png)
 
 <!--
 ### ConfigMaps

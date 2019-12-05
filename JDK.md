@@ -5,9 +5,7 @@ https://www.youtube.com/watch?v=YTPUNesUIbI
 컨테이너에서는 어떤 버전의 JDK를 사용하나요?
 
 ## Container Aware
-  - OpenJDK 8u192 or above
-  - JDK 11 lts 
-
+  - OpenJDK 8u192 or above (JDK 11 lts)
 
 ### HeapMemory
 

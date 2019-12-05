@@ -16,13 +16,13 @@
 - 커뮤니티의 힘, echo systems
 
 #### CNCF landscape - Kubernetes Echosystems
-![](img/k8s-cncf-landscape.png)
+![](../img/k8s-cncf-landscape.png)
 
 source: https://landscape.cncf.io/images/landscape.png
 
 
 #### A basic overview of the kubernetes architecture
-![](img/k8s-basic-arch.jpg)
+![](../img/k8s-basic-arch.jpg)
 
 source: Kubernetes In Action (book)
 
