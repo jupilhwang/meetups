@@ -15,7 +15,7 @@ marp: true
   Contents : http://bit.ly/2OO3AOq
 
 ---
-Thanks to Hyper Connect
+Thanks to Hyperconnect
 
 ---
 - Who am I?
