@@ -27,31 +27,31 @@ marp: true
 ```
 ---
 - Spring Boot for Cloud Native Application
-  - [Microservice / Cloud Native Application](msa.md)
+  - [Microservice / Cloud Native Application](md/msa/PITCHME.md)
   - [Pivotal Bank Demo Apps](https://github.com/jupilhwang/pivotal-bank-demo-kr)
-  - [Traditional Spring Cloud](spring-cloud.md)
+  - [Traditional Spring Cloud](md/spring-cloud/PITCHME.md)
 ---
-- [Reactive](Reactive/Reactive.md)
-  - [Spring WebFlux](spring-webflux.md)
+- [Reactive](md/Reactive/PITCHME.md)
+  - [Spring WebFlux](md/spring-webflux/PITCHME.md)
   - RSocket
   - R2DBC
   - Spring Cloud Gateway 
     - [Spring Cloud Gateway Overview](https://cloud.spring.io/spring-cloud-gateway/reference/html/)
     - [Spring Cloud Gateway](https://github.com/jupilhwang/pivotal-bank-demo-kr/blob/master/docs/lab_spring_cloud_gateway.md)
-        - [gateway-service](spring-cloud-gateway.md)
+        - [gateway-service](md/spring-cloud-gateway/PITCHME.md)
 
 ---
 - Spring Cloud Kubernetes
-  - [Kubernetes](spring-cloud-kubernetes/kubernetes.md)
-  - [어떤 JVM을 선택할 것인가?](JDK.md)
-  - [Containerized Image는 어떻게 만드나?](spring-cloud-kubernetes/dockerize.md)
+  - [Kubernetes](md/k8s-spring-cloud-kubernetes/PITCHME.md)
+  - [어떤 JVM을 선택할 것인가?](md/JDK/PITCHME.md)
+  - [Containerized Image는 어떻게 만드나?](md/k8s-dockerize/PITCHME.md)
     - 그냥 Dockerfile
     - Source2Image 를 사용
-    - [JIB 사용](jib.md)
-    - [Cloud Native Buildpack](cloud-native-buildpack.md)
-      - [kpack](spring-cloud-kubernetes/kpack.md)
-  - [애플리케이션 배포](spring-cloud-kubernetes/deployment.md)
-  - [Spring Cloud Kubernetes](spring-cloud-kubernetes/spring-cloud-kubernetes.md)
+    - [JIB 사용](md/jib/PITCHME.md)
+    - [Cloud Native Buildpack](md/cloud-native-buildpack/PITCHME.md)
+      - [kpack](md/k8s-kpack/PITCHME.md)
+  - [애플리케이션 배포](md/k8s-deployment/PITCHME.md)
+  - [Spring Cloud Kubernetes](md/spring-cloud-kubernetes/PITCHME.md)
 
 ---
 # [We Are Hiring Now !!!](https://pivotal.io/careers/openings/seoul)
