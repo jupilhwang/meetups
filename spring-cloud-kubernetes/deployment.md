@@ -52,8 +52,7 @@ kubectl port-foward service/demo-app 8080:8080
 ## Using Skaffold
 - Google 에서 만들 CI/CD(?) Pipeline for K8s
 
-https://skaffold.dev/
-
+  https://skaffold.dev/
 
 - skaffold.yaml
 ```yaml
@@ -63,8 +62,6 @@ build:
   artifacts:
     - image: namoo4u/jib-demo
       jib: {}
-        args: ['-x test']
-        type: gradle
 deploy:
   kubectl:
     manifests:
@@ -73,12 +70,12 @@ deploy:
 
 - run skaffold dev
 ```bash
-skaffold dev
+skaffold dev -f skaffold.yaml
 ```
 
   - Reference Links: https://skaffold.dev/docs/references/yaml/
 
 
 ## Cloud Code
-- 만약 IntelliJ IDEA 를 사용하면 "Cloud Code" Plugin 을 사용해 보자
+- 만약 IntelliJ IDEA 를 사용하면 "Cloud Code" Plugin 을 할 수 있다.
 
