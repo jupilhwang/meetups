@@ -50,7 +50,7 @@ kubectl port-foward service/demo-app 8080:8080
 또는
 
 ## Using Skaffold
-- Google 에서 만들 CI(?) Pipeline for K8s
+- Google 에서 만들 CI/CD(?) Pipeline for K8s
 
 https://skaffold.dev/
 

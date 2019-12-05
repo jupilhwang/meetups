@@ -54,7 +54,16 @@ marp: true
   - [Spring Cloud Kubernetes](spring-cloud-kubernetes/spring-cloud-kubernetes.md)
 
 ---
-[We Are Hiring Now !!!](https://pivotal.io/careers/openings/seoul)
+# [We Are Hiring Now !!!](https://pivotal.io/careers/openings/seoul)
+
+
+연락은 홈페이지에서 하시거나 아는 피봇에게...
 
 ---
-- [Survey](survey.md)
+### Survey
+설문에 참가하시고 메모를 남겨주시면 지속적인 업데이트를 드릴 수 있습니다. 
+다음 행사 정보 등을 먼저 드립니다.
+
+![](img/survey-qr.png)
+
+http://bit.ly/2RkLyVM
