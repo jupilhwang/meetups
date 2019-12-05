@@ -62,9 +62,10 @@ Thanks to Hyperconnect
 ---
 # [We Are Hiring Now !!!](https://pivotal.io/careers/openings/seoul)
 
-승리는 도전하는자의 것이다.
 
-도~~ 전~~
+Do what works. Always be kind. If this approach sounds like your way of working, then come work at Pivotal.
+
+승리는 도전하는자의 것이다. 도~~ 전~~
 
 ---
 ### Survey
