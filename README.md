@@ -4,8 +4,11 @@ marp: true
 # Meetups for Pivotal user group
 
 00:00:00 - Intro
+
 00:00:00 - Spring Cloud
+
 00:00:00 - Reactive
+
 00:00:00 - Kubernetes
 
 
